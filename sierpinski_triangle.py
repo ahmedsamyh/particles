@@ -46,7 +46,7 @@ class Particle:
         return [a, b, c]
 
 def birth_particles(particles):
-    new_particles = particles.copy()
+    new_particles = []
     for p in particles:
         for x in p.birth_particle():
             new_particles.append(Particle(x))
